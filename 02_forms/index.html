@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1>Car constructor</h1>
+    <p>Car constructor site</p>
+
+    <h2>Create New Car</h2>
+    <form name="productForm">
+        <label>Name:
+            <input type="text" name="name">
+        </label>
+        <label>Price:
+            <input type="number" step="0.01" name="price">
+        </label>
+        <label>Quantity:
+            <input type="number" min="0" name="quantity">
+        </label>
+        <label>colour:
+            <select name="colour">
+                <option value="yellow">yellow</option>
+                <option value="black">black</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="white">white</option>
+            </select>
+        </label>
+        <label>brand:
+            <input type="text" min="0" name="brand">
+        </label>
+        <label>Electric:
+            <input type="checkbox" name="electric">
+        </label>
+        <button type="reset">Cancel</button>
+        <button id="addBtn" type="submit">Create</button>
+    </form>
+
+    <h2>Products List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>colour</th>
+                <th>brand</th>
+                <th>Electric</th>
+            </tr>
+        </thead>
+        <tbody id="product-list">
+            <!-- Products will be added here -->
+            <tr>
+                <td>Sample Car</td>
+                <td>199459549</td>
+                <td>5</td>
+                <td>black</td>
+                <td>Bmw</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="center">
+        <button id="clearAllBtn">Clear All</button>
+    </div>
+
+    <script src="./js/car.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
