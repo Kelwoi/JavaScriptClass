@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM + LocalStorage</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <h2>Додавання блоків та світлофор з відновленням стану</h2>
+
+
+  <div id="blocks-container"></div>
+  <br>
+  <button onclick="addBlock()">Додати блок</button>
+
+
+  <div id="traffic-light">
+    <div class="light" id="light1"></div>
+    <div class="light" id="light2"></div>
+    <div class="light" id="light3"></div>
+  </div>
+  <button onclick="nextLight()">Далі</button>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
